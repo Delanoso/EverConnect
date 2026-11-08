@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173128">
+  <meta name="contact-email" content="hello@willowconnect.com">
+  <meta name="description" content="Request WillowConnect agents for customer support in the United States and Europe. €7 per agent hour.">
+  <meta property="og:title" content="Contact WillowConnect">
+  <meta property="og:description" content="Tell us about the desk you need covered. United States and Europe. €7 per agent hour.">
+  <meta property="og:type" content="website">
+  <title>Contact — WillowConnect</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 36 18" aria-hidden="true">
+          <path d="M1.5 13.2h10.2a5 5 0 0 0 0-10H1.5" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+          <path class="mark-b" d="M34.5 4.8H24.3a5 5 0 0 0 0 10h10.2" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+        </svg>
+        <span>WillowConnect</span>
+      </a>
+      <button class="nav-toggle btn btn-ghost btn-small" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <div class="header-panel" id="site-nav">
+        <nav aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="header-rate"><strong>€7</strong> / agent hour</p>
+        <a class="btn btn-small" href="#inquiry">Request agents</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap contact-grid">
+      <div class="contact-intro">
+        <p class="eyebrow">Contact</p>
+        <h1>Tell us about the desk you need.</h1>
+        <p class="lede">Share the markets, the channels, and the hours. A few details are enough for a serious first reply.</p>
+        <dl class="facts">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@willowconnect.com">hello@willowconnect.com</a></dd>
+          </div>
+          <div>
+            <dt>Rate</dt>
+            <dd>€7 per agent hour</dd>
+          </div>
+          <div>
+            <dt>Coverage</dt>
+            <dd>United States and Europe</dd>
+          </div>
+          <div>
+            <dt>Reply</dt>
+            <dd>Within one business day</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="form-card" id="inquiry">
+        <div id="latest" class="latest" hidden>
+          <p id="latest-text"></p>
+          <button class="btn btn-ghost btn-small" type="button" id="view-latest">View summary</button>
+        </div>
+
+        <form id="inquiry-form" action="mailto:hello@willowconnect.com" method="post" enctype="text/plain" novalidate>
+          <p class="form-note">Fields marked with * are required.</p>
+          <div id="form-errors" class="form-errors" role="alert" tabindex="-1" hidden>
+            <p>Please fix the following before we prepare your inquiry.</p>
+            <ul id="form-error-list"></ul>
+          </div>
+
+          <div class="fields">
+            <div class="field">
+              <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required>
+            </div>
+            <div class="field">
+              <label for="email">Work email <span class="req" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="120" required>
+            </div>
+            <div class="field">
+              <label for="company">Company <span class="req" aria-hidden="true">*</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" maxlength="120" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="24">
+            </div>
+          </div>
+
+          <fieldset id="region-set">
+            <legend>Where are your customers? <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="region" value="United States" required> United States</label>
+              <label class="choice"><input type="radio" name="region" value="Europe"> Europe</label>
+              <label class="choice"><input type="radio" name="region" value="United States and Europe"> United States and Europe</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="industry">Industry <span class="req" aria-hidden="true">*</span></label>
+            <select id="industry" name="industry" required>
+              <option value="" selected>Select an industry</option>
+              <option>Hospitality</option>
+              <option>Hotels</option>
+              <option>Food and beverage</option>
+              <option>Cruise</option>
+              <option>Warehousing and logistics</option>
+              <option>Retail</option>
+              <option>Travel</option>
+              <option>Property</option>
+              <option>Another industry</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="markets">Markets</label>
+            <input id="markets" name="markets" type="text" maxlength="140" placeholder="For example, New York and the Netherlands">
+          </div>
+
+          <fieldset>
+            <legend>Channels</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="channel" value="Phone"> Phone</label>
+              <label class="choice"><input type="checkbox" name="channel" value="Email"> Email</label>
+              <label class="choice"><input type="checkbox" name="channel" value="Chat"> Chat</label>
+              <label class="choice"><input type="checkbox" name="channel" value="After hours"> After hours</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="hours">Approximate weekly agent hours</label>
+            <input id="hours" name="hours" type="text" maxlength="80" inputmode="text" placeholder="For example, 40 hours a week">
+          </div>
+
+          <div class="field">
+            <div class="field-head">
+              <label for="message">What should we know? <span class="req" aria-hidden="true">*</span></label>
+              <span id="message-count">0 / 1000</span>
+            </div>
+            <textarea id="message" name="message" maxlength="1000" required placeholder="Volume, hours, and what a good answer sounds like."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Review inquiry</button>
+          </div>
+          <p class="fine">Reviewing prepares an email to hello@willowconnect.com and keeps a copy in this browser. Nothing is sent until you send that email.</p>
+        </form>
+
+        <div id="confirmation" class="confirmation" tabindex="-1" hidden>
+          <p class="eyebrow">Inquiry ready</p>
+          <h2>Your inquiry is ready to send.</h2>
+          <p id="confirmation-lead"></p>
+          <dl id="confirmation-details" class="summary"></dl>
+          <div class="confirmation-actions">
+            <a class="btn" id="email-link" href="mailto:hello@willowconnect.com">Email this inquiry</a>
+            <button class="btn btn-ghost" type="button" id="copy-summary">Copy summary</button>
+            <button class="btn btn-ghost" type="button" id="new-inquiry">Start another</button>
+          </div>
+          <p class="fine" id="copy-status" role="status"></p>
+          <textarea id="summary-fallback" class="summary-fallback" hidden readonly></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo-mark" viewBox="0 0 36 18" aria-hidden="true">
+            <path d="M1.5 13.2h10.2a5 5 0 0 0 0-10H1.5" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+            <path class="mark-b" d="M34.5 4.8H24.3a5 5 0 0 0 0 10h10.2" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+          </svg>
+          <span>WillowConnect</span>
+        </a>
+        <p class="footer-lead">Customer support and service for companies in the United States and Europe.</p>
+      </div>
+      <div>
+        <p class="footer-label">Visit</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-label">Coverage</p>
+        <ul>
+          <li>United States</li>
+          <li>Europe</li>
+          <li>€7 per agent hour</li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-label">Contact</p>
+        <ul>
+          <li><a href="mailto:hello@willowconnect.com">hello@willowconnect.com</a></li>
+          <li><a href="contact.html">Request agents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <div class="wrap footer-base-inner">
+        <p>© <span class="year">2026</span> WillowConnect</p>
+        <p>Hospitality to warehousing, cruise, and the industries between.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</body>
+</html>
