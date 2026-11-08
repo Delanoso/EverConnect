@@ -3,7 +3,7 @@
   if (!form) return;
 
   const metaEmail = document.querySelector('meta[name="contact-email"]');
-  const fallbackInbox = "hello@heronbell.com";
+  const fallbackInbox = "hello@willowconnect.com";
   const inboxValue = (metaEmail && metaEmail.content ? metaEmail.content : fallbackInbox).trim();
   const TEAM_INBOX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inboxValue) ? inboxValue : fallbackInbox;
 
@@ -20,7 +20,7 @@
   ];
   const REGIONS = ["United States", "Europe", "United States and Europe"];
   const CHANNELS = ["Phone", "Email", "Chat", "After hours"];
-  const STORAGE_KEY = "heronbell.inquiries";
+  const STORAGE_KEY = "willowconnect.inquiries";
 
   const field = {
     name: document.querySelector("#name"),
@@ -92,7 +92,7 @@
     bytes.forEach(function (byte) {
       tail += alphabet[byte % alphabet.length];
     });
-    return "HB-" + stamp + "-" + tail;
+    return "WC-" + stamp + "-" + tail;
   }
 
   function formatWhen(iso) {
@@ -121,7 +121,7 @@
 
   function summaryText(inquiry) {
     const lines = [
-      "Heron Bell coverage inquiry",
+      "WillowConnect coverage inquiry",
       "Reference: " + inquiry.reference,
       "Submitted: " + formatWhen(inquiry.createdAt),
       "",
@@ -214,10 +214,10 @@
     addRow("Message", inquiry.message);
 
     confirmationLead.textContent =
-      "Review the summary, then email it to Heron Bell. A copy of " +
+      "Review the summary, then email it to WillowConnect. A copy of " +
       inquiry.reference +
       " stays in this browser.";
-    const subject = "Heron Bell coverage inquiry " + inquiry.reference;
+    const subject = "WillowConnect coverage inquiry " + inquiry.reference;
     emailLink.href =
       "mailto:" +
       TEAM_INBOX +
