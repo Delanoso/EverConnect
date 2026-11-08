@@ -1,6 +1,6 @@
-# EverConnect
+# Heron Bell
 
-Marketing site for EverConnect, a customer support and service company for businesses in the United States and Europe. The published rate is €7 per agent, per hour.
+Marketing site for Heron Bell, a customer support and service company for businesses in the United States and Europe. The published rate is €7 per agent, per hour.
 
 ## Pages
 
@@ -18,4 +18,4 @@ Open http://127.0.0.1:4173
 
 ## Contact email
 
-The public address is `hello@everconnect.com`. The form checks the inquiry, shows a summary, and opens the visitor’s email app with that message. A copy is also kept in the visitor’s browser. Search the project for `hello@everconnect.com` and replace it with the inbox that should receive inquiries.
+The public address is `hello@heronbell.com`. The form checks the inquiry, shows a summary, and opens the visitor’s email app with that message. A copy is also kept in the visitor’s browser. Search the project for `hello@heronbell.com` and replace it with the inbox that should receive inquiries.
